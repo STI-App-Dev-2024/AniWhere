@@ -9,3 +9,6 @@
 
 ## Design
 - [Figma Design](https://www.figma.com/design/XyubB4Tuv1ECpz33kQBSZU/AniWhere?node-id=1-2&t=wtnjOuV5GX9GIzAi-1)
+
+## Database Design
+- [Database Desgin](https://dbdesigner.page.link/w9651JeeFKXDcEaKA)
