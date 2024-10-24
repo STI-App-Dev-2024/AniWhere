@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <ImageView
+        android:id="@+id/left_arrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/arrow"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp" />
+
+
+    <ImageView
+        android:id="@+id/right_logo"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:src="@drawable/aniwhere_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:id="@+id/termsandconditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/right_logo"
+        android:text="@string/termsandconditions"
+        android:textSize="72dp"
+        android:fontFamily="@font/cormorant_bold"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/termsandconditions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Acceptance of Terms"
+            android:fontFamily="@font/crimsonprobold"
+            android:textSize="26dp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AcceptancofTerms"
+            android:fontFamily="@font/crimsonproregular"
+            android:textSize="26dp"
+            android:textColor="@color/brown"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Changes to Terms"
+            android:fontFamily="@font/crimsonprobold"
+            android:textSize="26dp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crimsonproregular"
+            android:textSize="26dp"
+            android:textColor="@color/brown"
+            android:text="@string/ChangestoTerms"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. User Accounts"
+            android:fontFamily="@font/crimsonprobold"
+            android:textSize="26dp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crimsonproregular"
+            android:textSize="26dp"
+            android:textColor="@color/brown"
+            android:text="@string/UserAccounts"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. User Conduct"
+            android:fontFamily="@font/crimsonprobold"
+            android:textSize="26dp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crimsonproregular"
+            android:textSize="26dp"
+            android:textColor="@color/brown"
+            android:text="@string/UserAccounts"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Content Ownership"
+            android:fontFamily="@font/crimsonprobold"
+            android:textSize="26dp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crimsonproregular"
+            android:textSize="26dp"
+            android:textColor="@color/brown"
+            android:text="@string/ContentOwnership"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Lost and Found Section"
+            android:fontFamily="@font/crimsonprobold"
+            android:textSize="26dp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crimsonproregular"
+            android:textSize="26dp"
+            android:textColor="@color/brown"
+            android:text="@string/LostandFoundSection"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. Donations and Charities"
+            android:fontFamily="@font/crimsonprobold"
+            android:textSize="26dp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crimsonproregular"
+            android:textSize="26dp"
+            android:textColor="@color/brown"
+            android:text="@string/DonationsandCharities"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8. Adoption Section"
+            android:fontFamily="@font/crimsonprobold"
+            android:textSize="26dp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crimsonproregular"
+            android:textSize="26dp"
+            android:textColor="@color/brown"
+            android:text="@string/AdoptionSection"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9. Limitation of Liability"
+            android:fontFamily="@font/crimsonprobold"
+            android:textSize="26dp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crimsonproregular"
+            android:textSize="26dp"
+            android:textColor="@color/brown"
+            android:text="@string/LimitationofLiability"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10. Indemnification"
+            android:fontFamily="@font/crimsonprobold"
+            android:textSize="26dp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crimsonproregular"
+            android:textSize="26dp"
+            android:textColor="@color/brown"
+            android:text="@string/Indemnification"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11. Acceptance of Terms"
+            android:fontFamily="@font/crimsonprobold"
+            android:textSize="26dp"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crimsonproregular"
+            android:textSize="26dp"
+            android:textColor="@color/brown"
+            android:text="@string/AcceptancofTerms"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

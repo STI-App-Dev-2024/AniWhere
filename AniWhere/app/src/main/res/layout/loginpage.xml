@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="200dp"
+        android:src="@drawable/aniwhere_logo"
+        android:layout_marginBottom="58dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="36dp"
+        android:fontFamily="@font/cormorant_bold"
+        android:layout_marginBottom="43dp"
+        />
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="307dp"
+        android:layout_height="49dp"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/emailsize"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/cormorantlight"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="307dp"
+        android:layout_height="49dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/emailsize"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/cormorantlight"/>
+
+    <LinearLayout
+        android:layout_width="299dp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="54dp"
+        android:orientation="horizontal">
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:textColor="#705D3F"
+        android:fontFamily="@font/crimsonprobold"
+        android:layout_weight="1"
+        />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="48sp"
+            android:text="Forgot Password"
+            android:textColor="#705D3F"
+            android:textSize="16sp"
+            android:fontFamily="@font/crimsonprobold"
+            android:layout_weight=".6"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onForgotPasswordClick"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/loginbutton"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/cormorant_bold"
+       android:drawableLeft="@drawable/paw"
+        android:drawableRight="@drawable/paw"
+        android:backgroundTint="@color/matcha"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="16dp"
+            android:textColor="#705D3F"
+            android:fontFamily="@font/crimsonprobold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textSize="16dp"
+            android:textColor="#705D3F"
+            android:fontFamily="@font/crimsonprobold"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

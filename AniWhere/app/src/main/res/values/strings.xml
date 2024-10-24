@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">AniWhere</string>
+
+    <string name="termsandcondition">I have read and agree to Privacy Policy and Tracking Policy. Our terms &amp; conditions apply.</string>
+    <string name="termsandconditions">Terms and Conditions</string>
+    <string name="AcceptanceofTerms">By using the Aniwhere app, you agree to these Terms and Conditions. If you do not agree, please do not use the app.</string>
+    <string name="ChangestoTerms">We may modify these terms at any time. Continued use of the app after changes indicates your acceptance.</string>
+    <string name="UserAccounts">You may need to create an account to access certain features. You are responsible for keeping your account information secure.</string>
+    <string name="UserConduct">You agree to use the app lawfully and not to post false information, harass others, or upload harmful content.</string>
+    <string name="ContentOwnership">All content in the app is owned by Aniwhere or its providers. Users retain ownership of their submitted content but grant Aniwhere a license to use it.</string>
+    <string name="LostandFoundSection">Aniwhere allows users to report lost and found pets, but we are not responsible for the accuracy of user-provided information.</string>
+    <string name="DonationsandCharities">Donations made through the app are voluntary. Aniwhere is not liable for the performance of listed charities.</string>
+    <string name="AdoptionSection">Aniwhere connects users with adoption organizations but does not guarantee the availability or suitability of pets or organizations.</string>
+    <string name="LimitationofLiability">Aniwhere is not liable for any indirect or consequential damages arising from your use of the app.</string>
+    <string name="Indemnification">You agree to indemnify Aniwhere from any claims or damages arising from your use of the app.</string>
+    <string name="AcceptancofTerms">By using the app, you acknowledge that you have read and agree to these Terms and Condition</string>
+
+    <string name="HelpCenter">Welcome to the Aniwhere Help Center! Here you can find answers to common questions and guidance on how to use our app\'s features effectively.</string>
+    <string name="HCB1">How can I report a lost pet?</string>
+    <string name="HCB2">How can I report a found pet?</string>
+    <string name="HCB3">How can I donate to a charity?</string>
+    <string name="HCB4">How can I adopt a pet?</string>
+    <string name="HCB5">I can\'t log in to my account. How do I do this?</string>
+    <string name="HCB6">The app is not working properly</string>
+
+    <string name="feedback">Feedback</string>
+    <string name="feedbacktext">Welcome to the Aniwhere Feedback Center! Your feedback is valuable to us as it helps us improve and serve you and the animals better. Below you’ll find ways to provide feedback and suggestions.</string>
+    <string name="rate">RATE YOUR EXPERIENCE</string>
+    <string name="text1">Are you satisfied with our app?</string>
+    <string name="text2">How can we improve it?</string>
+    <string name="b1">Overall Service</string>
+    <string name="b2">User Experience</string>
+    <string name="b3">Feedback Process</string>
+    <string name="b4">Navigation</string>
+    <string name="b5">Efficiency</string>
+    <string name="b6">App Reliability</string>
+    <string name="commentbox">Tell us how can we improve...</string>"
+    <string name="submit">SUBMIT</string>
+    
+    <string name="hdiralpp1">If you’re having trouble reporting your lost pet on our app, we recommend trying these solutions.</string>
+    <string name="tt">Troubleshooting tips</string>
+    <string name="tt1">Update your Aniwhere app to the latest version.</string>
+    <string name="tt2">Connect to a reliable Wi-Fi network</string>
+    <string name="tt3">Make sure your device has enough storage</string>
+    <string name="tt4">Close your Aniwhere app and restart your device</string>
+    <string name="itrlp">Instructions To Report</string>
+    <string name="itrlp1">First, go to the lost and found page</string>
+    <string name="itrlp2">Then click the circle red button</string>
+    <string name="itrlp3">It will bring you to the report page</string>
+    <string name="itrlp4">Fill up the information needed</string>
+    <string name="itrlp5">Click the report button </string>
+
+    <string name="hcirafp">How can I report a found pet?</string>
+    <string name="hcirafp1">If you’re having trouble Finding a lost pet in our app , we recommend trying these solutions. </string>
+    <string name="itrfp">Instructions To Report</string>
+    <string name="itrfp1">First, Check your notifications if you have a notification about a pet that was found</string>
+    <string name="itrfp2">Or go to the main page and click the lost and found category at the main page</string>
+    <string name="itrfp3">Check the found pets page and check if your pet is there.</string>
+
+    <string name="hcimad">How can I report a found pet?</string>
+    <string name="hcimad1">If you’re having trouble Finding a lost pet in our app , we recommend trying these solutions. </string>
+    <string name="itrd">Instructions To Report</string>
+    <string name="itrd1">First, Go to the main page and click the charities category</string>
+    <string name="itrd2">You can see the post of the owners in need of donation of their pets</string>
+    <string name="itrd3">Click the paw button and it will bring you to the donation page</string>
+    <string name="itrd4">Click the donate button</string>
+
+    <string name="hdiap">How do I adopt a pet?</string>
+    <string name="hdiap1">If you’re having trouble about donating in our app , we recommend trying these solutions.</string>
+    <string name="itra1">First, Go to the main page and click the Adopt category</string>
+    <string name="itra2">You can see the post of the owners who opens their pet for donation</string>
+    <string name="itra3">Click the paw button and it will bring you to the donation page</string>
+    <string name="itra4">Click the donate button</string>
+
+    <string name="le">I can\'t log in to my account. What should I do?</string>
+    <string name="le1">If you’re having trouble about logging in your account , we recommend trying these solutions.</string>
+    <string name="cyc">Check Your Credentials</string>
+    <string name="cyc1">Double-check that you’ve entered the correct email/username and password. Make sure caps lock isn’t on and there are no extra spaces.</string>
+    <string name="ryp">Reset Your Password</string>
+    <string name="ryp1">If you’ve forgotten your password, click the "Forgot Password" link on the login page.</string>
+    <string name="ryp2">Enter your registered email address, and we’ll send you a link to reset your password. Follow the instructions in the email to create a new password.</string>
+    <string name="vye">Verify Your Email</string>
+    <string name="vye1">Ensure that your email address is verified. Check your inbox (and spam/junk folder) for any verification emails from Aniwhere.</string>
+    <string name="cyic">Check Your Internet Connection</string>
+    <string name="cyic1">Make sure you have a stable internet connection. Try switching between Wi-Fi and mobile data to see if the issue resolves.</string>
+    <string name="ua">Update the App</string>
+    <string name="ua1">Ensure you are using the latest version of Aniwhere. Visit your device\'s app store to check for updates.</string>
+    <string name="ccd">Clear Cache and Data</string>
+    <string name="ccd1">If you’re still having trouble, try clearing the app’s cache and data in your device settings (for Android users), or uninstall and reinstall the app.</string>
+
+    <string name="anw">The app is not working properly</string>
+    <string name="anw1">If you’re having trouble about logging in your account, we recommend trying these solutions.</string>
+    <string name="heading">Aniwhere App Not Working? Try These Steps:</string>
+    <string name="ra">Restart the App</string>
+    <string name="ra1">Close the app completely and reopen it. Sometimes restarting the app can fix minor glitches.</string>
+    <string name="cc">Clear Cache (Android Users)</string>
+    <string name="cc1">Go to your device’s settings, find "Apps," select Aniwhere, and clear the cache. This can resolve performance issues.</string>
+    <string name="ryd">Restart Your Device</string>
+    <string name="ryd1">Sometimes a quick device reboot can help fix app performance issues.</string>
+    <string name="rta">Reinstall the App</string>
+    <string name="rta1">Uninstall Aniwhere and reinstall it from your app store. This can resolve problems caused by corrupted data or files.</string>
+    <string name="cdsu">Check for Device Software Updates</string>
+    <string name="cdsu1">Ensure that your device’s operating system is up to date. Older software may cause compatibility issues with the app.</string>
+
+    <string name="petsname">your pet\'s name</string>
+</resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="685dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report Lost Pet"
+        android:gravity="center"
+        android:fontFamily="@font/cormorantregular"
+        android:textSize="32dp"/>
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="245dp"
+            android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:fontFamily="@font/cormorant_bold"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="307dp"
+            android:layout_height="45dp"
+            android:background="@drawable/emailsize"
+            android:fontFamily="@font/cormorantlight"
+            android:hint="your pet's name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColorHint="@color/white" />
+        <TextView
+            android:id="@+id/breed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Breed"
+            android:fontFamily="@font/cormorant_bold"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/breed1"
+            android:layout_width="307dp"
+            android:layout_height="45dp"
+            android:background="@drawable/emailsize"
+            android:fontFamily="@font/cormorantlight"
+            android:hint="your pet's breed"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColorHint="@color/white" />
+        <TextView
+            android:id="@+id/Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Gender"
+            android:fontFamily="@font/cormorant_bold"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="307dp"
+            android:layout_height="45dp"
+            android:background="@drawable/emailsize"
+            android:fontFamily="@font/cormorantlight"
+            android:hint="your pet's gender"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColorHint="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Missing since"
+            android:fontFamily="@font/cormorant_bold"
+            android:textSize="16sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MM/DD/YYYY"
+            android:textSize="16dp"
+            android:fontFamily="@font/cormorantlight"
+            android:textColor="@color/black"
+
+            style="?android:spinnerStyle"/>
+        <TextView
+            android:id="@+id/lastseen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Last seen at:"
+            android:fontFamily="@font/cormorant_bold"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/lastseen1"
+            android:layout_width="307dp"
+            android:layout_height="45dp"
+            android:background="@drawable/emailsize"
+            android:fontFamily="@font/cormorantlight"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColorHint="@color/white" />
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Contact number:"
+            android:fontFamily="@font/cormorant_bold"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/contact1"
+            android:layout_width="307dp"
+            android:layout_height="45dp"
+            android:background="@drawable/emailsize"
+            android:fontFamily="@font/cormorantlight"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColorHint="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Note:"
+            android:fontFamily="@font/cormorant_bold"
+            android:textSize="16sp" />
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="318dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidth="1dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:padding="8dp"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:maxLines="5"
+                android:minLines="3"
+                android:fontFamily="@font/cormorantregular"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="14sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+</LinearLayout></ScrollView>
+    <Button
+        android:layout_width="123dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="POST"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/dirtygreen"/>
+
+</RelativeLayout>

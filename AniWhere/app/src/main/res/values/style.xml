@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CircleImageViewStyle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+
+    </style>
+
+    <style name="RoundEdgesImageview" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5dp</item>
+
+    </style>
+
+    <style name="Widget.MyApp.FloatingActionButton.Rounded" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.MyApp.RoundedFAB</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.RoundedFAB" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50dp</item>
+    </style>
+
+</resources>
