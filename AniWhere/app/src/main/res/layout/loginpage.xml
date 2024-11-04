@@ -51,6 +51,7 @@
         android:layout_marginBottom="54dp"
         android:orientation="horizontal">
     <CheckBox
+        android:id="@+id/remember_me_checkbox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Remember me"

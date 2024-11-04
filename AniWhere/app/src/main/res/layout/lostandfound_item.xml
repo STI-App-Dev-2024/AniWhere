@@ -8,11 +8,14 @@
         android:orientation="horizontal"
         android:background="@drawable/whiterectanglelayout"
         >
+
         <ImageView
+            android:id="@+id/petlostprofile"
             android:layout_width="190dp"
             android:layout_height="180dp"
             android:scaleType="fitXY"
-            android:src="@drawable/lostandfound"/>
+            android:src="@drawable/lostandfound" />
+
         <LinearLayout
             android:id="@+id/middle_layout"
             android:layout_width="match_parent"
