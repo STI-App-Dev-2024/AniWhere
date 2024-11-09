@@ -14,7 +14,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Report Found Pet"
+                android:text="Report Lost Pet"
                 android:gravity="center"
                 android:fontFamily="@font/cormorantregular"
                 android:textSize="32dp"/>

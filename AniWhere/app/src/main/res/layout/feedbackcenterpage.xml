@@ -5,16 +5,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/lightgray">
 
-    <ImageView
-        android:id="@+id/left_arrow"
+    <ImageButton
+        android:id="@+id/backbtn"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:src="@drawable/arrow"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp" />
-
+        android:layout_marginTop="55dp" />
 
     <ImageView
         android:id="@+id/right_logo"
@@ -23,34 +22,36 @@
         android:src="@drawable/aniwhere_logo"
         android:layout_centerHorizontal="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="20dp"
-        />
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="10dp"/>
+
     <TextView
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:id="@+id/feedback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="@string/feedback"
-        android:textSize="34sp"
-        android:fontFamily="@font/crimsonprobold"
-        />
+        android:textSize="24sp"
+        android:fontFamily="@font/LexendDecaRegular" />
+
     <LinearLayout
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/feedback"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
         <TextView
             android:id="@+id/feedbacktext"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:text="@string/feedbacktext"
-            android:textSize="16sp"
+            android:fontFamily="@font/LexendDecaLight"
+            android:textSize="15sp"
             android:layout_gravity="center"/>
         <LinearLayout
+            android:id="@+id/rating"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,14 +62,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/rate"
-                android:fontFamily="@font/crimsonsemibold"
+                android:fontFamily="@font/LexendDecaBold"
                 android:textSize="20sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/text1"
-                android:fontFamily="@font/crimsonprolight"
-                android:textSize="16sp"/>
+                android:fontFamily="@font/LexendDecaLight"
+                android:textSize="14sp"/>
             <RatingBar
                 android:id="@+id/ratingBar"
                 android:layout_width="wrap_content"
@@ -79,10 +80,11 @@
                 android:layout_gravity="center"
                 android:progressTint="@color/matcha"
                 android:progressBackgroundTint="@color/lightgray"
-                android:layout_marginTop="5dp"
-                />
+                android:layout_marginTop="5dp" />
         </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/suggestions"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -92,10 +94,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/crimsonsemibold"
+            android:fontFamily="@font/LexendDecaBold"
             android:textSize="16sp"
-            android:text="@string/text2"
-            />
+            android:text="@string/text2" />
         <RelativeLayout
             android:layout_gravity="center"
             android:layout_width="match_parent"
@@ -109,6 +110,7 @@
                 android:layout_height="50dp"
                 android:text="@string/b1"
                 android:textSize="16sp"
+                android:fontFamily="@font/LexendDecaRegular"
                 android:textColor="@color/black"
                 android:backgroundTint="@color/lightgray"/>
             <Button
@@ -118,6 +120,7 @@
                 android:layout_height="50dp"
                 android:text="@string/b2"
                 android:textSize="16sp"
+                android:fontFamily="@font/LexendDecaRegular"
                 android:textColor="@color/black"
                 android:backgroundTint="@color/lightgray"/>
             <Button
@@ -127,9 +130,9 @@
                 android:layout_height="50dp"
                 android:text="@string/b3"
                 android:textSize="16sp"
+                android:fontFamily="@font/LexendDecaRegular"
                 android:textColor="@color/black"
                 android:backgroundTint="@color/lightgray"/>
-
             <Button
                android:id="@+id/b4"
                 android:layout_alignParentRight="true"
@@ -137,9 +140,9 @@
                 android:layout_height="50dp"
                 android:text="@string/b4"
                 android:textSize="16sp"
+                android:fontFamily="@font/LexendDecaRegular"
                 android:textColor="@color/black"
-                android:backgroundTint="@color/lightgray"
-                />
+                android:backgroundTint="@color/lightgray" />
             <Button
                 android:id="@+id/b5"
                 android:layout_alignParentRight="true"
@@ -148,6 +151,7 @@
                 android:layout_height="50dp"
                 android:text="@string/b5"
                 android:textSize="16sp"
+                android:fontFamily="@font/LexendDecaRegular"
                 android:textColor="@color/black"
                 android:backgroundTint="@color/lightgray"/>
             <Button
@@ -159,10 +163,8 @@
                 android:text="@string/b6"
                 android:textColor="@color/black"
                 android:backgroundTint="@color/lightgray"
-                android:textSize="16sp"/>
-
-
-
+                android:textSize="16sp"
+                android:fontFamily="@font/LexendDecaRegular"/>
 
         </RelativeLayout>
         <com.google.android.material.textfield.TextInputLayout
@@ -172,39 +174,38 @@
             android:layout_gravity="center"
             android:hint="@string/commentbox"
             app:boxStrokeColor="@color/black"
-        app:boxStrokeWidth="1dp"
-        app:boxCornerRadiusTopStart="10dp"
-        app:boxCornerRadiusTopEnd="10dp"
-        app:boxCornerRadiusBottomStart="10dp"
-        app:boxCornerRadiusBottomEnd="10dp">
+            app:boxStrokeWidth="1dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputEditText"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
         android:padding="8dp"
         android:inputType="textMultiLine"
         android:scrollbars="vertical"
         android:maxLines="5"
         android:minLines="3"
-        android:fontFamily="@font/cormorantregular"
+        android:fontFamily="@font/LexendDecaLight"
         android:textColor="@color/black"
         android:textColorHint="@color/gray"
-        android:textSize="14sp"
+        android:textSize="12sp"
         android:hint="@string/commentbox" />
-
     </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
         <Button
             android:id="@+id/submit"
             android:layout_marginTop="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="123dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:text="@string/submit"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/matcha"/>
+            android:textColor="@color/white"
+            android:backgroundTint="@color/dirtygreen"/>
     </LinearLayout>
 </RelativeLayout>

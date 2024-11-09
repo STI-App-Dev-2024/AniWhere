@@ -2,12 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/lightgray">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="name"
-                android:fontFamily="@font/cormorant_bold"
+                android:fontFamily="@font/cormorantbold"
                 android:textSize="20dp"
                 android:id="@+id/name"/>
             <TextView
@@ -42,26 +44,30 @@
 
         </LinearLayout>
         <Button
+            android:id="@+id/donate_btn"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:layout_height="35dp"
             android:layout_gravity="center"
+            android:fontFamily="@font/LexendDecaRegular"
             android:text="Donate"
             android:textColor="@color/black"
-            android:drawableLeft="@drawable/paw2"
-            />
+            android:textSize="11dp"
+            android:drawableLeft="@drawable/paw_icon"
+            android:background="@drawable/recbtn"
+            app:backgroundTint="@color/black" />
     </LinearLayout>
         <TextView
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Due to unforeseen changes in my life circumstances, such as a demanding work schedule and relocation, I can no longer provide Bruce with the time, attention, and care he truly deserves. It's a difficult decision, but I believe finding Bruce a loving home where he can receive the affection and care he needs is in his best interest. I want to ensure Bruce is in an environment where he can thrive and be happy."/>
+            android:text="Text"/>
 
     <LinearLayout
+        android:id="@+id/images"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="5dp"
-        >
+        android:layout_marginTop="5dp">
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="180dp"
             android:layout_height="149dp"
@@ -91,10 +97,9 @@
     <LinearLayout
         android:layout_width="65dp"
         android:layout_height="15dp"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
         <ImageView
-            android:id="@+id/paw_like"
+            android:id="@+id/like_btn"
             android:layout_width="16dp"
             android:layout_height="15dp"
             android:src="@drawable/paw_like"
@@ -106,7 +111,7 @@
             android:src="@drawable/commentbox"
             android:layout_weight="1"/>
         <ImageView
-            android:id="@+id/share_icon"
+            android:id="@+id/share_btn"
             android:layout_width="16dp"
             android:layout_height="15dp"
             android:src="@drawable/shareicon"

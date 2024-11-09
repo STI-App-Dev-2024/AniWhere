@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/lightgray">
 
     <ImageView
-        android:id="@+id/left_arrow"
+        android:id="@+id/backbtn"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:src="@drawable/arrow"
@@ -13,16 +14,14 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp" />
 
-
     <ImageView
         android:id="@+id/right_logo"
         android:layout_width="70dp"
         android:layout_height="60dp"
         android:src="@drawable/aniwhere_logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="40dp" />
 
-        />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="600dp"
@@ -38,9 +37,8 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="@string/le"
-            android:textSize="24dp"
-            android:fontFamily="@font/crimsonprobold"
-
+            android:textSize="20dp"
+            android:fontFamily="@font/LexendDecaRegular"
             />
         <TextView
             android:layout_width="360dp"
@@ -55,8 +53,8 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="@string/cyc"
-            android:textSize="24dp"
-            android:fontFamily="@font/crimsonprobold"/>
+            android:textSize="20dp"
+            android:fontFamily="@font/LexendDecaSemiBold"/>
         <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -84,8 +82,8 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="@string/ryp"
-            android:textSize="24dp"
-            android:fontFamily="@font/crimsonprobold"/>
+            android:textSize="20dp"
+            android:fontFamily="@font/LexendDecaSemiBold"/>
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -130,8 +128,8 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="@string/vye"
-            android:textSize="24dp"
-            android:fontFamily="@font/crimsonprobold"/>
+            android:textSize="20dp"
+            android:fontFamily="@font/LexendDecaSemiBold"/>
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -159,8 +157,8 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="@string/cyic"
-            android:textSize="24dp"
-            android:fontFamily="@font/crimsonprobold"/>
+            android:textSize="20dp"
+            android:fontFamily="@font/LexendDecaSemiBold"/>
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -188,8 +186,8 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="@string/ua"
-            android:textSize="24dp"
-            android:fontFamily="@font/crimsonprobold"/>
+            android:textSize="20dp"
+            android:fontFamily="@font/LexendDecaSemiBold"/>
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -217,8 +215,8 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="@string/ccd"
-            android:textSize="24dp"
-            android:fontFamily="@font/crimsonprobold"/>
+            android:textSize="20dp"
+            android:fontFamily="@font/LexendDecaSemiBold"/>
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

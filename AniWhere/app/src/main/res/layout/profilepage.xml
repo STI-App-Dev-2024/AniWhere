@@ -4,23 +4,24 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/lightgray">
+
     <ImageView
+        android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:src="@drawable/lostandfound"
         android:scaleType="fitXY"
-        android:background="@drawable/image"
-        />
-    <ImageView
-        android:id="@+id/left_arrow"
+        android:background="@drawable/image" />
+
+    <ImageButton
+        android:id="@+id/backbtn"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:src="@drawable/arrow"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        />
+        android:layout_marginTop="55dp" />
 
     <LinearLayout
         android:id="@+id/middle_layout"
@@ -34,65 +35,61 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-<TextView
-    android:layout_width="0sp"
-    android:layout_height="wrap_content"
-    android:text="Name"
-    android:layout_weight="1"
-    android:textSize="30dp"
-    android:fontFamily="@font/crimsonsemibold"
-    />
-
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/search"
-                android:layout_gravity="end"/>
+    <TextView
+        android:id="@+id/petname"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_weight="1"
+        android:textSize="30dp"
+        android:fontFamily="@font/LexendDecaBold" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <TextView
+                android:id="@+id/breed"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Breed"
                 android:layout_weight="1"
                 android:textSize="20sp"
-                android:fontFamily="@font/crimsonprolight"
-                />
+                android:fontFamily="@font/crimsonprolight" />
 
             <TextView
+                android:id="@+id/age"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3 years old"
                 android:textSize="20sp"
-                android:fontFamily="@font/crimsonprolight"
-                />
+                android:fontFamily="@font/crimsonprolight" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@drawable/location"
                 android:layout_gravity="center"
-                android:fontFamily="@font/crimsonprolight"
-                />
+                android:fontFamily="@font/crimsonprolight" />
+
             <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Breed"
-            android:layout_weight="1"
-            android:textSize="20sp"
-            android:fontFamily="@font/crimsonprolight"
-            />
+                android:id="@+id/location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:fontFamily="@font/crimsonprolight"/>
         </LinearLayout>
     </LinearLayout>
+
     <ScrollView
         android:layout_below="@id/middle_layout"
         android:layout_width="match_parent"
@@ -107,6 +104,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profile_image"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:src="@drawable/charities"
@@ -119,12 +117,14 @@
                 android:orientation="vertical"
                 android:layout_gravity="center">
                 <TextView
+                    android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="name"
-                    android:fontFamily="@font/cormorant_bold"
+                    android:fontFamily="@font/cormorantbold"
                     android:textSize="20sp"/>
                 <TextView
+                    android:id="@+id/username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="name"
@@ -133,6 +133,7 @@
             </LinearLayout>
         </LinearLayout>
         <TextView
+            android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Due to unforeseen changes in my life circumstances, such as a demanding work schedule and relocation, I can no longer provide Bruce with the time, attention, and care he truly deserves. It's a difficult decision, but I believe finding Bruce a loving home where he can receive the affection and care he needs is in his best interest. I want to ensure Bruce is in an environment where he can thrive and be happy."/>
@@ -147,7 +148,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="https://msng.link/o?Andrew torres=fm"
-            android:fontFamily="@font/cormorant_bold"
+            android:fontFamily="@font/cormorantbold"
             android:textSize="16sp"/>
     </LinearLayout>
     </ScrollView>

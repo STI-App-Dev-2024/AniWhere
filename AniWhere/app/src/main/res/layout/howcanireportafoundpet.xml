@@ -4,16 +4,15 @@
     android:layout_height="match_parent"
     android:backgroundTint="@color/lightgray">
 
-    <ImageView
-        android:id="@+id/left_arrow"
+    <ImageButton
+        android:id="@+id/backbtn"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:src="@drawable/arrow"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp" />
-
+        android:layout_marginTop="55dp" />
 
     <ImageView
         android:id="@+id/right_logo"
@@ -36,7 +35,7 @@
             android:padding="16dp"
             android:text="@string/HCB1"
             android:textSize="24dp"
-            android:fontFamily="@font/crimsonprobold"
+            android:fontFamily="@font/LexendDecaRegular"
 
             />
         <TextView
@@ -52,7 +51,7 @@
             android:padding="16dp"
             android:text="@string/tt"
             android:textSize="24dp"
-            android:fontFamily="@font/crimsonprobold"/>
+            android:fontFamily="@font/LexendDecaRegular"/>
         <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -128,7 +127,7 @@
             android:padding="16dp"
             android:text="@string/itrfp"
             android:textSize="24dp"
-            android:fontFamily="@font/crimsonprobold"/>
+            android:fontFamily="@font/LexendDecaRegular"/>
         <TableLayout
             android:layout_width="350dp"
             android:layout_height="wrap_content"
