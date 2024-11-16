@@ -4,24 +4,45 @@ public class CharitiesModel {
     private String name;
     private String username;
     private String description;
-    private int profileImage;
-    private int image1;
-    private int image2;
+    private String profileImageUrl;
 
-    public CharitiesModel(String name, String username, String description, int profileImage, int image1, int image2) {
+    public CharitiesModel(String name, String username, String description, String profileImageUrl) {
         this.name = name;
         this.username = username;
         this.description = description;
-        this.profileImage = profileImage;
-        this.image1 = image1;
-        this.image2 = image2;
+        this.profileImageUrl = profileImageUrl;
     }
 
-    // Getters
-    public String getName() { return name; }
-    public String getUsername() { return username; }
-    public String getDescription() { return description; }
-    public int getProfileImage() { return profileImage; }
-    public int getImage1() { return image1; }
-    public int getImage2() { return image2; }
+    // Getters and setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getProfileImageUrl() {
+        return profileImageUrl;
+    }
+
+    public void setProfileImageUrl(String profileImageUrl) {
+        this.profileImageUrl = profileImageUrl;
+    }
 }

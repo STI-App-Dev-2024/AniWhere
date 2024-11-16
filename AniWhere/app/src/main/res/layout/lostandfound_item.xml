@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:orientation="horizontal"
-<<<<<<< HEAD
+
         android:background="@drawable/whiterectanglelayout" >
         <ImageView
             android:id="@+id/imagelnf"
@@ -15,9 +15,6 @@
             android:layout_height="180dp"
             android:scaleType="fitXY"
             android:src="@drawable/lostandfound"/>
-=======
-        android:background="@drawable/whiterectanglelayout"
-        >
 
         <ImageView
             android:id="@+id/petlostprofile"
@@ -25,7 +22,6 @@
             android:layout_height="180dp"
             android:scaleType="fitXY"
             android:src="@drawable/lostandfound" />
->>>>>>> 7ceaab31a7caabc0661f8384cc7b0c7369399d0f
 
         <LinearLayout
             android:id="@+id/middle_layout"

@@ -42,6 +42,7 @@
         android:hint="Write a comment..." />
 
     <Button
+        android:id="@+id/postButton"
         android:layout_width="123dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"

@@ -32,7 +32,7 @@
         android:layout_centerHorizontal="true"
         android:text="Help Center"
         android:textSize="30dp"
-        android:fontFamily="@font/LexendDecaRegular" />
+        android:fontFamily="@font/lexenddecaregular" />
 
     <LinearLayout
         android:layout_width="360dp"
@@ -44,7 +44,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/LexendDecaLight"
+            android:fontFamily="@font/lexenddecalight"
             android:text="@string/HelpCenter"
             android:textSize="16dp"/>
 
@@ -57,7 +57,7 @@
             android:layout_height="40dp"
             android:text="@string/HCB1"
             android:textColor="@color/black"
-            android:fontFamily="@font/LexendDecaRegular"
+            android:fontFamily="@font/lexenddecaregular"
             android:backgroundTint="@color/gray" />
         <View
             android:layout_width="match_parent"
@@ -68,7 +68,7 @@
             android:layout_height="40dp"
             android:text="@string/HCB2"
             android:textColor="@color/black"
-            android:fontFamily="@font/LexendDecaRegular"
+            android:fontFamily="@font/lexenddecaregular"
             android:backgroundTint="@color/gray" />
         <View
             android:layout_width="match_parent"
@@ -79,7 +79,7 @@
             android:layout_height="40dp"
             android:text="@string/HCB3"
             android:textColor="@color/black"
-            android:fontFamily="@font/LexendDecaRegular"
+            android:fontFamily="@font/lexenddecaregular"
             android:backgroundTint="@color/gray" />
         <View
             android:layout_width="match_parent"
@@ -90,7 +90,7 @@
             android:layout_height="40dp"
             android:text="@string/HCB4"
             android:textColor="@color/black"
-            android:fontFamily="@font/LexendDecaRegular"
+            android:fontFamily="@font/lexenddecaregular"
             android:backgroundTint="@color/gray" />
         <View
             android:layout_width="match_parent"
@@ -101,7 +101,7 @@
             android:layout_height="40dp"
             android:text="@string/HCB5"
             android:textColor="@color/black"
-            android:fontFamily="@font/LexendDecaRegular"
+            android:fontFamily="@font/lexenddecaregular"
             android:backgroundTint="@color/gray" />
         <View
             android:layout_width="match_parent"
@@ -112,7 +112,7 @@
             android:layout_height="40dp"
             android:text="@string/HCB6"
             android:textColor="@color/black"
-            android:fontFamily="@font/LexendDecaRegular"
+            android:fontFamily="@font/lexenddecaregular"
             android:backgroundTint="@color/gray" />
     </LinearLayout>
 </RelativeLayout>

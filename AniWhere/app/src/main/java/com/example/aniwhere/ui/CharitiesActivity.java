@@ -1,4 +1,4 @@
-// CharitiesActivity.java
+
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -33,10 +33,10 @@ public class CharitiesActivity extends AppCompatActivity {
     }
 
     private void loadCharitiesData() {
-        charitiesList.add(new CharitiesModel("Charity 1", "user1", "Helping kids in need",
+        charitiesList.add(new CharitiesModel("Charity 1", "user1", "Helping pets in need",
                 R.drawable.profile_image, R.drawable.image1, R.drawable.image2));
-        charitiesList.add(new CharitiesModel("Charity 2", "user2", "Providing education support",
+        charitiesList.add(new CharitiesModel("Charity 2", "user2", "Providing pet support",
                 R.drawable.profile_image, R.drawable.image1, R.drawable.image2));
-        // Add more charity items as needed
+
     }
 }

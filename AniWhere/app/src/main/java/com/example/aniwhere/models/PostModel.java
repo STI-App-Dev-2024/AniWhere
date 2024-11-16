@@ -6,7 +6,7 @@ public class PostModel {
     private String name;
     private String description;
     private int profileImage;
-    private List<Integer> galleryImages;  // List of image resources for the gallery
+    private List<Integer> galleryImages;
 
     public PostModel(String name, String description, int profileImage, List<Integer> galleryImages) {
         this.name = name;

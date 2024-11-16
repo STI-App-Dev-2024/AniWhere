@@ -1,64 +1,68 @@
 package com.example.aniwhere.adapter;
+
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
-import androidx.compose.ui.graphics.Color;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.aniwhere.R;
 import com.example.aniwhere.models.LostAndFoundModels;
+
 import java.util.List;
 
-public class LostAndFoundAdapter extends RecyclerView.Adapter<LostAndFoundAdapter.ViewHolder> {
+public class LostAndFoundAdapter extends RecyclerView.Adapter<LostAndFoundAdapter.LostAndFoundViewHolder> {
 
-    private List<LostAndFoundModels> animalList;
+    private Context context;
+    private List<LostAndFoundModels> lostAndFoundModels;
 
-    public LostAndFoundAdapter(List<LostAndFoundModels> animalList) {
-        this.animalList = animalList;
+    public LostAndFoundAdapter(Context context, List<LostAndFoundModels> lostAndFoundModels) {
+        this.context = context;
+        this.lostAndFoundModels = lostAndFoundModels;
     }
+
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.lostandfound_item, parent, false);
-        return new ViewHolder(view);
+    public LostAndFoundViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.lostandfound_item, parent, false);
+        return new LostAndFoundViewHolder(view);
     }
-    @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        LostAndFoundModels animal = animalList.get(position);
-        holder.animalType.setText(animal.getType());
-        holder.animalName.setText("Name: " + animal.getName());
-        holder.animalGender.setText("Gender: " + animal.getGender());
-        holder.animalLocation.setText(animal.getLocation());
-        holder.lastSeen.setText("Last seen " + animal.getLastSeen());
-        holder.status.setText(animal.getStatus());
 
-        if (animal.getStatus().equalsIgnoreCase("lost")) {
-            holder.status.setTextColor(holder.itemView.getContext().getResources().Color.parseColor("#721011"));
-        } else {
-            holder.status.setTextColor(holder.itemView.getContext().getResources().Color.parseColor("#705D3F"));
-        }
-        holder.petlostProfile.setImageResource(animal.getImageResourceId());
+    @Override
+    public void onBindViewHolder(@NonNull LostAndFoundViewHolder holder, int position) {
+        LostAndFoundModels item = lostAndFoundModels.get(position);
+        holder.petImage.setImageResource(item.getImageResource());
+        holder.type.setText(item.getType());
+        holder.breed.setText(item.getBreed());
+        holder.name.setText("Name: " + item.getName());
+        holder.sex.setText("Sex: " + item.getSex());
+        holder.location.setText(item.getLocation());
+        holder.lastSeen.setText("Last seen: " + item.getLastSeen());
     }
 
     @Override
     public int getItemCount() {
-        return animalList.size();
+        return lostAndFoundModels.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView animalType, animalName, animalGender, animalLocation, lastSeen, status;
-        ImageView petlostProfile;
-        public ViewHolder(@NonNull View itemView) {
+    public static class LostAndFoundViewHolder extends RecyclerView.ViewHolder {
+
+        ImageView petImage;
+        TextView type, breed, name, sex, location, lastSeen;
+
+        public LostAndFoundViewHolder(View itemView) {
             super(itemView);
-            animalType = itemView.findViewById(R.id.animalType);
-            animalName = itemView.findViewById(R.id.animalName);
-            animalGender = itemView.findViewById(R.id.animalGender);
-            animalLocation = itemView.findViewById(R.id.animalLocation);
-            lastSeen = itemView.findViewById(R.id.lastSeen);
-            status = itemView.findViewById(R.id.status);
-            petlostProfile = itemView.findViewById(R.id.petlostprofile);
+            petImage = itemView.findViewById(R.id.imagelnf);
+            type = itemView.findViewById(R.id.type);
+            breed = itemView.findViewById(R.id.breed);
+            name = itemView.findViewById(R.id.name);
+            sex = itemView.findViewById(R.id.sex);
+            location = itemView.findViewById(R.id.location);
+            lastSeen = itemView.findViewById(R.id.lastseen);
         }
     }
 }

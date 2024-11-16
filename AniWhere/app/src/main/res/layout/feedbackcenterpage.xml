@@ -33,7 +33,7 @@
         android:layout_centerHorizontal="true"
         android:text="@string/feedback"
         android:textSize="24sp"
-        android:fontFamily="@font/LexendDecaRegular" />
+        android:fontFamily="@font/lexenddecaregular" />
 
     <LinearLayout
         android:layout_marginTop="20dp"
@@ -47,7 +47,7 @@
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:text="@string/feedbacktext"
-            android:fontFamily="@font/LexendDecaLight"
+            android:fontFamily="@font/lexenddecalight"
             android:textSize="15sp"
             android:layout_gravity="center"/>
         <LinearLayout
@@ -62,13 +62,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/rate"
-                android:fontFamily="@font/LexendDecaBold"
+                android:fontFamily="@font/lexenddecabold"
                 android:textSize="20sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/text1"
-                android:fontFamily="@font/LexendDecaLight"
+                android:fontFamily="@font/lexenddecalight"
                 android:textSize="14sp"/>
             <RatingBar
                 android:id="@+id/ratingBar"
@@ -94,7 +94,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/LexendDecaBold"
+            android:fontFamily="@font/lexenddecabold"
             android:textSize="16sp"
             android:text="@string/text2" />
         <RelativeLayout
@@ -110,7 +110,7 @@
                 android:layout_height="50dp"
                 android:text="@string/b1"
                 android:textSize="16sp"
-                android:fontFamily="@font/LexendDecaRegular"
+                android:fontFamily="@font/lexenddecaregular"
                 android:textColor="@color/black"
                 android:backgroundTint="@color/lightgray"/>
             <Button
@@ -120,7 +120,7 @@
                 android:layout_height="50dp"
                 android:text="@string/b2"
                 android:textSize="16sp"
-                android:fontFamily="@font/LexendDecaRegular"
+                android:fontFamily="@font/lexenddecaregular"
                 android:textColor="@color/black"
                 android:backgroundTint="@color/lightgray"/>
             <Button
@@ -130,7 +130,7 @@
                 android:layout_height="50dp"
                 android:text="@string/b3"
                 android:textSize="16sp"
-                android:fontFamily="@font/LexendDecaRegular"
+                android:fontFamily="@font/lexenddecaregular"
                 android:textColor="@color/black"
                 android:backgroundTint="@color/lightgray"/>
             <Button
@@ -140,7 +140,7 @@
                 android:layout_height="50dp"
                 android:text="@string/b4"
                 android:textSize="16sp"
-                android:fontFamily="@font/LexendDecaRegular"
+                android:fontFamily="@font/lexenddecaregular"
                 android:textColor="@color/black"
                 android:backgroundTint="@color/lightgray" />
             <Button
@@ -151,7 +151,7 @@
                 android:layout_height="50dp"
                 android:text="@string/b5"
                 android:textSize="16sp"
-                android:fontFamily="@font/LexendDecaRegular"
+                android:fontFamily="@font/lexenddecaregular"
                 android:textColor="@color/black"
                 android:backgroundTint="@color/lightgray"/>
             <Button
@@ -164,7 +164,7 @@
                 android:textColor="@color/black"
                 android:backgroundTint="@color/lightgray"
                 android:textSize="16sp"
-                android:fontFamily="@font/LexendDecaRegular"/>
+                android:fontFamily="@font/lexenddecaregular"/>
 
         </RelativeLayout>
         <com.google.android.material.textfield.TextInputLayout
@@ -190,7 +190,7 @@
         android:scrollbars="vertical"
         android:maxLines="5"
         android:minLines="3"
-        android:fontFamily="@font/LexendDecaLight"
+        android:fontFamily="@font/lexenddecalight"
         android:textColor="@color/black"
         android:textColorHint="@color/gray"
         android:textSize="12sp"

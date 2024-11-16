@@ -1,45 +1,47 @@
-
 package com.example.aniwhere.models;
 
 public class LostAndFoundModels {
-    private final String type;
-    private final String name;
-    private final String gender;
-    private final String location;
-    private final String lastSeen;
-    private final String status;
-    private final int imageResourceId;
 
-    public LostAndFoundModels(String type, String name, String gender, String location,
-                              String lastSeen, String status, int imageResourceId) {
+    private String type, breed, name, sex, location, lastSeen;
+    private int imageResource;
+
+    public LostAndFoundModels(String type, String breed,
+                              String name, String sex, String location,
+                              String lastSeen, int imageResource) {
         this.type = type;
+        this.breed = breed;
         this.name = name;
-        this.gender = gender;
+        this.sex = sex;
         this.location = location;
         this.lastSeen = lastSeen;
-        this.status = status;
-        this.imageResourceId = imageResourceId;
+        this.imageResource = imageResource;
     }
 
     public String getType() {
         return type;
     }
+
+    public String getBreed() {
+        return breed;
+    }
+
     public String getName() {
         return name;
     }
-    public String getGender() {
-        return gender;
+
+    public String getSex() {
+        return sex;
     }
+
     public String getLocation() {
         return location;
     }
+
     public String getLastSeen() {
         return lastSeen;
     }
-    public String getStatus() {
-        return status;
-    }
-    public int getImageResourceId() {
-        return imageResourceId;
+
+    public int getImageResource() {
+        return imageResource;
     }
 }

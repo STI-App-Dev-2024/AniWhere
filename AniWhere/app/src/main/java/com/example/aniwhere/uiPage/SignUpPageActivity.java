@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.aniwhere.R;
@@ -27,6 +28,8 @@ public class SignUpPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signuppage);
 
+        ImageButton left_btn = findViewById(R.id.left_arrow);
+
         // Initialize UI elements
         firstNameEditText = findViewById(R.id.firstname);
         lastNameEditText = findViewById(R.id.lastname);
@@ -37,6 +40,14 @@ public class SignUpPageActivity extends AppCompatActivity {
         termsCheckbox = findViewById(R.id.terms_checkbox);
         signUpButton = findViewById(R.id.signup_button);
         signUpButton.setOnClickListener(view -> handleSignUp());
+
+        left_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignUpPageActivity.this, LoginPageActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void handleSignUp() {

@@ -109,7 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Notification"
-            android:fontFamily="@font/LexendDecaSemiBold"
+            android:fontFamily="@font/lexenddecasemibold"
             android:textSize="20dp"
             android:layout_gravity="center"
             android:paddingLeft="15dp"/>
@@ -132,7 +132,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Help"
-                android:fontFamily="@font/LexendDecaSemiBold"
+                android:fontFamily="@font/lexenddecasemibold"
                 android:textSize="20dp"
                 android:layout_gravity="center"
                 android:paddingLeft="15dp"/>
@@ -155,7 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Feedback"
-                android:fontFamily="@font/LexendDecaSemiBold"
+                android:fontFamily="@font/lexenddecasemibold"
                 android:textSize="20dp"
                 android:layout_gravity="center"
                 android:paddingLeft="15dp"/>
@@ -176,7 +176,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Log out"
-                android:fontFamily="@font/LexendDecaSemiBold"
+                android:fontFamily="@font/lexenddecasemibold"
                 android:textSize="20dp"
                 android:layout_gravity="center"
                 android:paddingLeft="15dp"/>

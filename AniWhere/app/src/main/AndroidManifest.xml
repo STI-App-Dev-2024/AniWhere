@@ -12,22 +12,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AniWhere"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true"/>
+            android:name="com.example.aniwhere.uiPage.AdoptionPageActivity"
+            android:exported="false"/>
         <activity
-            android:name="com.example.aniwhere.ui.AdoptionActivity"
-            android:exported="true"/>
+            android:name="com.example.aniwhere.uiPage.CharitiesPageActivity"
+            android:exported="false" />
         <activity
-            android:name="com.example.aniwhere.ui.CharitiesActivity">
-            android:exported="true" />
+            android:name="com.example.aniwhere.uiPage.LostAndFoundPageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.aniwhere.uiPage.HomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.aniwhere.uiPage.SettingsPageActivity"
+            android:exported="false" />
+        <activity android:name=".uiPage.FeedbackCenterPageActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.example.aniwhere.MainActivity"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
-
 </manifest>

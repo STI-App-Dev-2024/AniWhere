@@ -1,5 +1,4 @@
 package com.example.aniwhere.uiPage;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,9 +9,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.aniwhere.R;
 
 public class LoginPageActivity extends AppCompatActivity{
@@ -36,7 +33,7 @@ public class LoginPageActivity extends AppCompatActivity{
         passwordEditText = findViewById(R.id.password);
         rememberMeCheckBox = findViewById(R.id.remember_me_checkbox);
         login_Button = findViewById(R.id.login_button);
-        signUpTextView = findViewById(R.id.signup_TextView); //Wala pang i.d
+        signUpTextView = findViewById(R.id.sign_up); //Wala pang i.d
         loadLoginDetails();
         login_Button.setOnClickListener(v -> {
             String username = usernameEditText.getText().toString();
