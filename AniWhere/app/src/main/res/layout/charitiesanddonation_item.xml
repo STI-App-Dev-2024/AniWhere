@@ -6,7 +6,6 @@
     android:padding="16dp"
     android:background="@color/lightgray">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,13 +48,14 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:fontFamily="@font/LexendDecaRegular"
+            app:backgroundTint="@color/black"
+            android:fontFamily="@font/lexenddecaregular"
             android:text="Donate"
             android:textColor="@color/black"
             android:textSize="11dp"
             android:drawableLeft="@drawable/paw_icon"
-            android:background="@drawable/recbtn"
-            app:backgroundTint="@color/black" />
+            android:background="@drawable/recbtn" />
+
     </LinearLayout>
         <TextView
             android:id="@+id/description"

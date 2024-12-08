@@ -11,13 +11,11 @@ import com.example.aniwhere.R;
 
 public class LostAndFoundSearchFragment extends Fragment {
 
-    public SearchFragment() {
-
+    public LostAndFoundSearchFragment() {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.lostandfoundpage, container, false);
     }
 }

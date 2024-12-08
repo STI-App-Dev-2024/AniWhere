@@ -42,7 +42,7 @@
         android:text="Name"
         android:layout_weight="1"
         android:textSize="30dp"
-        android:fontFamily="@font/LexendDecaBold" />
+        android:fontFamily="@font/lexenddecabold" />
         </LinearLayout>
 
         <LinearLayout

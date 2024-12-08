@@ -50,7 +50,7 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder> {
 
         public PetViewHolder(@NonNull View itemView) {
             super(itemView);
-            actionImageView = itemView.findViewById(R.id.action_image);
+            actionImageView = itemView.findViewById(R.id.profile_image);
             nameTextView = itemView.findViewById(R.id.name);
             breedTextView = itemView.findViewById(R.id.breed);
             ageTextView = itemView.findViewById(R.id.age);

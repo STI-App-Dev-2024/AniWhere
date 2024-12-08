@@ -73,7 +73,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
             profileImageView = itemView.findViewById(R.id.profile_image);
             nameTextView = itemView.findViewById(R.id.name_text);
             descriptionTextView = itemView.findViewById(R.id.description_text);
-            followButton = itemView.findViewById(R.drawable.followbtn);
+            followButton = itemView.findViewById(R.id.followBtn);
             mainImage = itemView.findViewById(R.id.main_image);
             subImage1 = itemView.findViewById(R.id.sub_image1);
             subImage2 = itemView.findViewById(R.id.sub_image2);

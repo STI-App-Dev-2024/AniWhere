@@ -28,7 +28,8 @@
         <activity
             android:name="com.example.aniwhere.uiPage.SettingsPageActivity"
             android:exported="false" />
-        <activity android:name=".uiPage.FeedbackCenterPageActivity"
+        <activity
+            android:name=".uiPage.FeedbackCenterPageActivity"
             android:exported="false"/>
         <activity
             android:name="com.example.aniwhere.MainActivity"

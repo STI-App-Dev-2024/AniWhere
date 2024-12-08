@@ -35,9 +35,7 @@
             android:padding="16dp"
             android:text="@string/HCB1"
             android:textSize="24dp"
-            android:fontFamily="@font/LexendDecaRegular"
-
-            />
+            android:fontFamily="@font/lexenddecaregular" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +49,7 @@
             android:padding="16dp"
             android:text="@string/tt"
             android:textSize="24dp"
-            android:fontFamily="@font/LexendDecaRegular"/>
+            android:fontFamily="@font/lexenddecaregular"/>
         <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -127,7 +125,7 @@
             android:padding="16dp"
             android:text="@string/itrfp"
             android:textSize="24dp"
-            android:fontFamily="@font/LexendDecaRegular"/>
+            android:fontFamily="@font/lexenddecaregular"/>
         <TableLayout
             android:layout_width="350dp"
             android:layout_height="wrap_content"

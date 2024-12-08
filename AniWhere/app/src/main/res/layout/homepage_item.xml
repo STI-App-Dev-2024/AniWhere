@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/lightgray">
-
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="@color/lightgray"
     android:padding="16dp">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/profile_image"
             android:layout_width="55dp"
@@ -21,101 +21,111 @@
             android:src="@drawable/charities"
             app:shapeAppearanceOverlay="@style/CircleImageViewStyle"
             android:scaleType="centerCrop"
-            android:layout_margin="10dp"/>
+            android:layout_marginEnd="10dp" />
+
         <LinearLayout
-            android:layout_width="180dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center">
+            android:layout_weight="1"
+            android:orientation="vertical">
+
             <TextView
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="name"
+                android:text="Name"
                 android:fontFamily="@font/cormorantbold"
-                android:textSize="20dp"/>
+                android:textSize="20sp" />
+
             <TextView
                 android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="name"
+                android:text="username"
                 android:fontFamily="@font/cormorantregular"
-                android:textSize="16dp"/>
+                android:textSize="16sp" />
         </LinearLayout>
 
         <Button
             android:id="@+id/followbtn"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
+            android:layout_height="40dp"
             android:text="Follow"
             android:textColor="@color/white"
             android:drawableLeft="@drawable/heart"
             app:backgroundTint="@color/black" />
-
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"/>
+
+    <LinearLayout
+        android:id="@+id/images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_image"
+            android:layout_width="214dp"
+            android:layout_height="149dp"
+            android:src="@drawable/charities"
+            android:scaleType="fitXY"
+            app:shapeAppearance="@style/RoundEdgesImageview"
+            android:layout_marginEnd="8dp" />
+
         <LinearLayout
-            android:id="@+id/images"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
+
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/image1"
-                android:layout_width="214dp"
-                android:layout_height="149dp"
+                android:id="@+id/sub_image1"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
                 android:src="@drawable/charities"
                 android:scaleType="fitXY"
                 app:shapeAppearance="@style/RoundEdgesImageview"
-                android:layout_gravity="center" />
-            <LinearLayout
-                android:layout_marginLeft="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center">
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/image2"
-                    android:layout_width="71dp"
-                    android:layout_height="71dp"
-                    android:src="@drawable/charities"
-                    android:scaleType="fitXY"
-                    app:shapeAppearance="@style/RoundEdgesImageview"
-                    android:layout_margin="2dp" />
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/image3"
-                    android:layout_width="71dp"
-                    android:layout_height="71dp"
-                    android:src="@drawable/charities"
-                    android:scaleType="fitXY"
-                    app:shapeAppearance="@style/RoundEdgesImageview"
-                    android:layout_margin="2dp" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_marginLeft="2dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/image4"
-                    android:layout_width="71dp"
-                    android:layout_height="71dp"
-                    android:src="@drawable/charities"
-                    android:scaleType="fitXY"
-                    app:shapeAppearance="@style/RoundEdgesImageview"
-                    android:layout_margin="2dp" />
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/image5"
-                    android:layout_width="71dp"
-                    android:layout_height="71dp"
-                    android:src="@drawable/charities"
-                    android:scaleType="fitXY"
-                    app:shapeAppearance="@style/RoundEdgesImageview"
-                    android:layout_margin="2dp" />
-            </LinearLayout>
+                android:layout_marginBottom="4dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/sub_image2"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:src="@drawable/charities"
+                android:scaleType="fitXY"
+                app:shapeAppearance="@style/RoundEdgesImageview" />
         </LinearLayout>
-        <View
-            android:layout_width="0dp"
-            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/sub_image3"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:src="@drawable/charities"
+                android:scaleType="fitXY"
+                app:shapeAppearance="@style/RoundEdgesImageview"
+                android:layout_marginBottom="4dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/sub_image4"
+                android:layout_width="71dp"
+                android:layout_height="71dp"
+                android:src="@drawable/charities"
+                android:scaleType="fitXY"
+                app:shapeAppearance="@style/RoundEdgesImageview" />
+        </LinearLayout>
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="65dp"
         android:layout_height="15dp"
@@ -140,4 +150,3 @@
             android:layout_weight="1"/>
     </LinearLayout>
 </LinearLayout>
-</RelativeLayout>

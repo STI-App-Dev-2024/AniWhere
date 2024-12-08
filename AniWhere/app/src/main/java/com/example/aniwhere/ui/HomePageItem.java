@@ -1,3 +1,5 @@
+package com.example.aniwhere.ui;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,9 +15,9 @@ import com.google.android.material.imageview.ShapeableImageView;
 public class HomePageItem extends AppCompatActivity {
 
     private ShapeableImageView profileImage, mainImage, subImage1, subImage2, subImage3, subImage4;
-    private TextView profileName, subTitle;
-    private Button followButton;
-    private ImageView likeIcon, commentIcon, shareIcon;
+    private TextView profileName, userName, description;
+    private Button followBtn;
+    private ImageView likeBtn, commentBox, shareBtn;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,18 +31,19 @@ public class HomePageItem extends AppCompatActivity {
         subImage3 = findViewById(R.id.sub_image3);
         subImage4 = findViewById(R.id.sub_image4);
 
-        profileName = findViewById(R.id.profile_name);
-        subTitle = findViewById(R.id.sub_title);
+        profileName = findViewById(R.id.name);
+        userName = findViewById(R.id.username);
+        description = findViewById(R.id.description);
 
-        followButton = findViewById(R.id.follow_button);
-        likeIcon = findViewById(R.id.like_icon);
-        commentIcon = findViewById(R.id.comment_icon);
-        shareIcon = findViewById(R.id.share_icon);
+        followBtn = findViewById(R.id.followbtn);
+        likeBtn = findViewById(R.id.like_btn);
+        commentBox = findViewById(R.id.comment_box);
+        shareBtn= findViewById(R.id.share_btn);
 
 
-        followButton.setOnClickListener(view -> Toast.makeText(this, "Followed", Toast.LENGTH_SHORT).show());
-        likeIcon.setOnClickListener(view -> Toast.makeText(this, "Liked!", Toast.LENGTH_SHORT).show());
-        commentIcon.setOnClickListener(view -> Toast.makeText(this, " ", Toast.LENGTH_SHORT).show());
-        shareIcon.setOnClickListener(view -> Toast.makeText(this, "Shared post", Toast.LENGTH_SHORT).show());
+        followBtn.setOnClickListener(view -> Toast.makeText(this, "Followed", Toast.LENGTH_SHORT).show());
+        likeBtn.setOnClickListener(view -> Toast.makeText(this, "Liked!", Toast.LENGTH_SHORT).show());
+        commentBox.setOnClickListener(view -> Toast.makeText(this, " ", Toast.LENGTH_SHORT).show());
+        shareBtn.setOnClickListener(view -> Toast.makeText(this, "Shared post", Toast.LENGTH_SHORT).show());
     }
 }
